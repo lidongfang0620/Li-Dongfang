@@ -1,0 +1,18 @@
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 -m serial.tools.list_ports      
+/dev/cu.Bluetooth-Incoming-Port
+/dev/cu.debug-console
+/dev/cu.usbmodem1102
+/dev/cu.usbmodem1104
+4 ports found
+
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 host.py /dev/cu.usbmodem1102 ping
+OK DM-MC02
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 host.py /dev/cu.usbmodem1102 swd 
+OK DPIDR 6BA02477
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 host.py /dev/cu.usbmodem1102 swd
+OK DPIDR 6BA02477
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 host.py /dev/cu.usbmodem1102 ping
+OK DM-MC02
+
+(.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 host.py /dev/cu.usbmodem1104 uart-loopback
+OK UART loopback
