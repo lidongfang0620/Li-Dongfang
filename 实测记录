@@ -1,3 +1,6 @@
+lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 -m venv .venv
+lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % source .venv/bin/activate
+
 (.venv) lidongfang@lidongfangdeMacBook-Air embedded-training-template-main % python3 -m serial.tools.list_ports      
 /dev/cu.Bluetooth-Incoming-Port
 /dev/cu.debug-console
